@@ -1,6 +1,7 @@
 #define FONCTION_H_INCLUDED
 #include <SDL/SDL.h>
 #include <SDL/SDL_image.h>
+#include <utilitaire.h>
 
 
 
@@ -12,6 +13,9 @@ typedef struct
  SDL_Rect anime_perso[16];
  int frameNumber, frameTimer;
  int vie,score;
+ Texte Textevie;
+ Texte Textscore;
+
 
 }perso;
 
