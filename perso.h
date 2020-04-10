@@ -20,15 +20,15 @@ typedef struct
 }perso;
 
 void initialiserperso(perso *p);
-void initialiservie(vie *v);
-void initialiserscore(score *s);
-void initialisertemps(temps *t);
-void modificationvie(vie *v, int c);
-void modificationscore(score *s);
-void modificationtemps(temps *t);
-void affichervie(vie v);
-void afficherscore(score s);
-void affichertemps(temps t);
+void initialiservie(texte *textevie ,int *vie);
+void initialiserscore(texte *textescore,int score);
+void initialisertemps(texte *temps);
+void miseajourvie(texte *textevie, int *vie);
+void miseajourcore(texte *textescore,int *score);
+void miseajourtemps(texte *temps);
+void affichervie(texte textevie,int vie);
+void afficherscore(texte textescore,int score);
+void affichertemps(texte temps);
 void afficherperso(perso p);
 void deplacerperso(posperso *pp);
 void animerperso(perso *p);
