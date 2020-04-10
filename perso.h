@@ -13,8 +13,8 @@ typedef struct
  SDL_Rect anime_perso[16];
  int frameNumber, frameTimer;
  int vie,score;
- Texte Textevie;
- Texte Textscore;
+ texte textevie;
+ texte textscore;
 
 
 }perso;
