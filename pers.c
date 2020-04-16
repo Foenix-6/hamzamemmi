@@ -158,7 +158,7 @@ else if (d==2)
 	p->right=0;
         p->left=0;
 }
-
+}
 
 
 
@@ -191,3 +191,4 @@ if (p.left==8)
 
 
 return p;
+}
