@@ -9,7 +9,7 @@
 #include <SDL/SDL_ttf.h>
 #include <math.h>
 #include <time.h>
-
+#include "utilitaire.h"
 
 
 
@@ -24,18 +24,11 @@ struct personnage
     int left,right;
 
     SDL_Rect position_joueur;
-	int score;
+	int score,vie;
 	
 };typedef struct personnage pers;
 
 
-struct vie
-{
-  int nbr;
-  SDL_Rect position;
-  SDL_Surface *image;
-};
-typedef struct vie vie;
 
 
 struct temps
@@ -52,17 +45,7 @@ typedef struct temps temps ;
 
 
 
-struct score
-{
-TTF_Font *police;
-int tempsActuel;
-int tempsPrecedent;
-int compteur ;
-SDL_Surface *texte;
-SDL_Rect position;
-};
 
-typedef struct score score ;
 
 
 
