@@ -1,5 +1,5 @@
-#ifndef MENU_H_
-#define MENU_H_
+#ifndef PERS_H_INCLUDED
+#define PERS_H_INCLUDED
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -77,3 +77,7 @@ pers boujer(int d, pers p);
 void initialiserperso(pers *p);
 void afficherperso(pers *p,int d,SDL_Surface *ecran);
 void liberer_surface(pers *p);
+
+
+
+#endif
