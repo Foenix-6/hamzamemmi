@@ -1,5 +1,5 @@
-prog:perso.O background.o main.o stage1.o stat.o
-	gcc perso.o background.o ain.o stage1.o stat.o -prog -lSDL -lSDL_image -lSDL_ttf
+prog:perso.o background.o main.o stage1.o stat.o
+	gcc perso.o background.o main.o stage1.o stat.o -o prog -lSDL -lSDL_image -lSDL_ttf
 perso.o:perso.c
 	gcc -c perso.c -g
 background.o:background.c
