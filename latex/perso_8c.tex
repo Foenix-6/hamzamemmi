@@ -1,0 +1,217 @@
+\hypertarget{perso_8c}{}\section{perso.\+c File Reference}
+\label{perso_8c}\index{perso.\+c@{perso.\+c}}
+{\ttfamily \#include \char`\"{}perso.\+h\char`\"{}}\newline
+Include dependency graph for perso.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{perso_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{perso_8c_a85e6aaf9b4118a4114712f5bc22ad11f}\label{perso_8c_a85e6aaf9b4118a4114712f5bc22ad11f}} 
+void {\bfseries initialiser\+\_\+animation\+\_\+perso} (S\+D\+L\+\_\+\+Rect $\ast$clip)
+\item 
+void \hyperlink{perso_8c_ab76e735545868fc99b5b91849eea7d7a}{initialiser\+\_\+perso} (\hyperlink{structpersonnage}{personnage} $\ast$p)
+\begin{DoxyCompactList}\small\item\em To initialize the personnage p . \end{DoxyCompactList}\item 
+void \hyperlink{perso_8c_a43181619fa488bdbf458203b3a0a51c5}{afficher\+\_\+perso} (\hyperlink{structpersonnage}{personnage} $\ast$p, S\+D\+L\+\_\+\+Surface $\ast$screen)
+\begin{DoxyCompactList}\small\item\em To show the personnage p . \end{DoxyCompactList}\item 
+void \hyperlink{perso_8c_ad47ed90717588a44782d7fc447b9da38}{avancer\+\_\+perso} (\hyperlink{structpersonnage}{personnage} $\ast$p, Uint32 dt)
+\begin{DoxyCompactList}\small\item\em for the movement of the personnage p (right) . \end{DoxyCompactList}\item 
+void \hyperlink{perso_8c_af2d468b1b3c2ac314c537523935f30a3}{reculer\+\_\+perso} (\hyperlink{structpersonnage}{personnage} $\ast$p, Uint32 dt)
+\begin{DoxyCompactList}\small\item\em for the movement of the personnage p (left) . \end{DoxyCompactList}\item 
+void \hyperlink{perso_8c_a0bd10122e93a415b8fb3b7b1b99d0343}{animation\+\_\+perso\+\_\+stable} (\hyperlink{structpersonnage}{personnage} $\ast$p)
+\begin{DoxyCompactList}\small\item\em for the annimation of the personnage when he is (stable ) . \end{DoxyCompactList}\item 
+void \hyperlink{perso_8c_acf78a9d4298ec00e8c547fc2047dc165}{animation\+\_\+perso\+\_\+mvt\+\_\+droite} (\hyperlink{structpersonnage}{personnage} $\ast$p)
+\begin{DoxyCompactList}\small\item\em for annimation of the personnage when he moove to the right . . \end{DoxyCompactList}\item 
+void \hyperlink{perso_8c_aca82958e9c2d40dd84411f1dbead06fd}{animation\+\_\+perso\+\_\+mvt\+\_\+gauche} (\hyperlink{structpersonnage}{personnage} $\ast$p)
+\begin{DoxyCompactList}\small\item\em for annimation of the personnage when he moove to the right . . \end{DoxyCompactList}\item 
+void \hyperlink{perso_8c_a5dbb91d858957a453f8ff0fab86b1b4f}{acceleration} (\hyperlink{structpersonnage}{personnage} $\ast$p, Uint32 dt)
+\begin{DoxyCompactList}\small\item\em for the acceleration of the personnage . . \end{DoxyCompactList}\item 
+void \hyperlink{perso_8c_a43aa4382fb26d1e6f57c9a8ffff1abd9}{jump\+\_\+perso} (\hyperlink{structpersonnage}{personnage} $\ast$p)
+\begin{DoxyCompactList}\small\item\em for the jump of the personnage . . \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{perso_8c_ab428534f5943def0966f97bbd6121b8d}\label{perso_8c_ab428534f5943def0966f97bbd6121b8d}} 
+int {\bfseries nb\+\_\+image\+\_\+par\+\_\+ligne\+\_\+spritesheet} =11
+\item 
+\mbox{\Hypertarget{perso_8c_ab5ad6832fa73f7509f57d1f8fb835659}\label{perso_8c_ab5ad6832fa73f7509f57d1f8fb835659}} 
+int {\bfseries nb\+\_\+ligne\+\_\+spritesheet} =4
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{perso_8c_a5dbb91d858957a453f8ff0fab86b1b4f}\label{perso_8c_a5dbb91d858957a453f8ff0fab86b1b4f}} 
+\index{perso.\+c@{perso.\+c}!acceleration@{acceleration}}
+\index{acceleration@{acceleration}!perso.\+c@{perso.\+c}}
+\subsubsection{\texorpdfstring{acceleration()}{acceleration()}}
+{\footnotesize\ttfamily void acceleration (\begin{DoxyParamCaption}\item[{\hyperlink{structpersonnage}{personnage} $\ast$}]{p,  }\item[{Uint32}]{dt }\end{DoxyParamCaption})}
+
+
+
+for the acceleration of the personnage . . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & the personnage \\
+\hline
+{\em dt} & Unit32 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{perso_8c_a43181619fa488bdbf458203b3a0a51c5}\label{perso_8c_a43181619fa488bdbf458203b3a0a51c5}} 
+\index{perso.\+c@{perso.\+c}!afficher\+\_\+perso@{afficher\+\_\+perso}}
+\index{afficher\+\_\+perso@{afficher\+\_\+perso}!perso.\+c@{perso.\+c}}
+\subsubsection{\texorpdfstring{afficher\+\_\+perso()}{afficher\_perso()}}
+{\footnotesize\ttfamily void afficher\+\_\+perso (\begin{DoxyParamCaption}\item[{\hyperlink{structpersonnage}{personnage} $\ast$}]{p,  }\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen }\end{DoxyParamCaption})}
+
+
+
+To show the personnage p . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em screen} & the screen \\
+\hline
+{\em p} & the personnage \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{perso_8c_acf78a9d4298ec00e8c547fc2047dc165}\label{perso_8c_acf78a9d4298ec00e8c547fc2047dc165}} 
+\index{perso.\+c@{perso.\+c}!animation\+\_\+perso\+\_\+mvt\+\_\+droite@{animation\+\_\+perso\+\_\+mvt\+\_\+droite}}
+\index{animation\+\_\+perso\+\_\+mvt\+\_\+droite@{animation\+\_\+perso\+\_\+mvt\+\_\+droite}!perso.\+c@{perso.\+c}}
+\subsubsection{\texorpdfstring{animation\+\_\+perso\+\_\+mvt\+\_\+droite()}{animation\_perso\_mvt\_droite()}}
+{\footnotesize\ttfamily void animation\+\_\+perso\+\_\+mvt\+\_\+droite (\begin{DoxyParamCaption}\item[{\hyperlink{structpersonnage}{personnage} $\ast$}]{p }\end{DoxyParamCaption})}
+
+
+
+for annimation of the personnage when he moove to the right . . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & the personnage \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{perso_8c_aca82958e9c2d40dd84411f1dbead06fd}\label{perso_8c_aca82958e9c2d40dd84411f1dbead06fd}} 
+\index{perso.\+c@{perso.\+c}!animation\+\_\+perso\+\_\+mvt\+\_\+gauche@{animation\+\_\+perso\+\_\+mvt\+\_\+gauche}}
+\index{animation\+\_\+perso\+\_\+mvt\+\_\+gauche@{animation\+\_\+perso\+\_\+mvt\+\_\+gauche}!perso.\+c@{perso.\+c}}
+\subsubsection{\texorpdfstring{animation\+\_\+perso\+\_\+mvt\+\_\+gauche()}{animation\_perso\_mvt\_gauche()}}
+{\footnotesize\ttfamily void animation\+\_\+perso\+\_\+mvt\+\_\+gauche (\begin{DoxyParamCaption}\item[{\hyperlink{structpersonnage}{personnage} $\ast$}]{p }\end{DoxyParamCaption})}
+
+
+
+for annimation of the personnage when he moove to the right . . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & the personnage \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{perso_8c_a0bd10122e93a415b8fb3b7b1b99d0343}\label{perso_8c_a0bd10122e93a415b8fb3b7b1b99d0343}} 
+\index{perso.\+c@{perso.\+c}!animation\+\_\+perso\+\_\+stable@{animation\+\_\+perso\+\_\+stable}}
+\index{animation\+\_\+perso\+\_\+stable@{animation\+\_\+perso\+\_\+stable}!perso.\+c@{perso.\+c}}
+\subsubsection{\texorpdfstring{animation\+\_\+perso\+\_\+stable()}{animation\_perso\_stable()}}
+{\footnotesize\ttfamily void animation\+\_\+perso\+\_\+stable (\begin{DoxyParamCaption}\item[{\hyperlink{structpersonnage}{personnage} $\ast$}]{p }\end{DoxyParamCaption})}
+
+
+
+for the annimation of the personnage when he is (stable ) . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & the personnage \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{perso_8c_ad47ed90717588a44782d7fc447b9da38}\label{perso_8c_ad47ed90717588a44782d7fc447b9da38}} 
+\index{perso.\+c@{perso.\+c}!avancer\+\_\+perso@{avancer\+\_\+perso}}
+\index{avancer\+\_\+perso@{avancer\+\_\+perso}!perso.\+c@{perso.\+c}}
+\subsubsection{\texorpdfstring{avancer\+\_\+perso()}{avancer\_perso()}}
+{\footnotesize\ttfamily void avancer\+\_\+perso (\begin{DoxyParamCaption}\item[{\hyperlink{structpersonnage}{personnage} $\ast$}]{p,  }\item[{Uint32}]{dt }\end{DoxyParamCaption})}
+
+
+
+for the movement of the personnage p (right) . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & Unit32 \\
+\hline
+{\em p} & the personnage \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{perso_8c_ab76e735545868fc99b5b91849eea7d7a}\label{perso_8c_ab76e735545868fc99b5b91849eea7d7a}} 
+\index{perso.\+c@{perso.\+c}!initialiser\+\_\+perso@{initialiser\+\_\+perso}}
+\index{initialiser\+\_\+perso@{initialiser\+\_\+perso}!perso.\+c@{perso.\+c}}
+\subsubsection{\texorpdfstring{initialiser\+\_\+perso()}{initialiser\_perso()}}
+{\footnotesize\ttfamily void initialiser\+\_\+perso (\begin{DoxyParamCaption}\item[{\hyperlink{structpersonnage}{personnage} $\ast$}]{p }\end{DoxyParamCaption})}
+
+
+
+To initialize the personnage p . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & the personnage \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{perso_8c_a43aa4382fb26d1e6f57c9a8ffff1abd9}\label{perso_8c_a43aa4382fb26d1e6f57c9a8ffff1abd9}} 
+\index{perso.\+c@{perso.\+c}!jump\+\_\+perso@{jump\+\_\+perso}}
+\index{jump\+\_\+perso@{jump\+\_\+perso}!perso.\+c@{perso.\+c}}
+\subsubsection{\texorpdfstring{jump\+\_\+perso()}{jump\_perso()}}
+{\footnotesize\ttfamily void jump\+\_\+perso (\begin{DoxyParamCaption}\item[{\hyperlink{structpersonnage}{personnage} $\ast$}]{p }\end{DoxyParamCaption})}
+
+
+
+for the jump of the personnage . . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & the personnage \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{perso_8c_af2d468b1b3c2ac314c537523935f30a3}\label{perso_8c_af2d468b1b3c2ac314c537523935f30a3}} 
+\index{perso.\+c@{perso.\+c}!reculer\+\_\+perso@{reculer\+\_\+perso}}
+\index{reculer\+\_\+perso@{reculer\+\_\+perso}!perso.\+c@{perso.\+c}}
+\subsubsection{\texorpdfstring{reculer\+\_\+perso()}{reculer\_perso()}}
+{\footnotesize\ttfamily void reculer\+\_\+perso (\begin{DoxyParamCaption}\item[{\hyperlink{structpersonnage}{personnage} $\ast$}]{p,  }\item[{Uint32}]{dt }\end{DoxyParamCaption})}
+
+
+
+for the movement of the personnage p (left) . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & Unit32 \\
+\hline
+{\em p} & the personnage \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
